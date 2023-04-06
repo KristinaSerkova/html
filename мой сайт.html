@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Привет мир!</title>
+    <link rel="icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="icon/android-chrome-192x192.png">
+    <link rel="stylesheet" href="public/css/main.css" type="text/css">
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #111111;
+      }
+      header {
+    padding: 15px 30px;
+    background: #101010;
+    color: rgba(255,255,255,.5);
+}
+
+header a {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header a:hover {
+    opacity: .8;
+} 
+
+section {
+    padding: 40px 30px;
+}
+section:nth-child(odd) {
+    background: #e9e8e8;
+}
+
+blockquote {
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+ul li {
+    padding: 0 0 0 30px;
+    list-style: none;
+    position: relative;
+}
+
+
+ul li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 2px solid chocolate;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+}
+
+ul li + li {
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    height: 40px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+button, input[type="button"], input[type="submit"]  {
+    height: 40px;
+    width: 300px;
+    background: chocolate;
+    border: 0;
+    color: #fff;
+}
+
+th {
+    background: #111111;
+    color: #fff;
+}
+
+th, td {
+    padding: 4px 6px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <a href="#me">Обо мне</a>
+      <span>|</span>
+      <a href="#was">Если бы я была</a>
+      <span>|</span>
+      <a href="#characteristics">Сильные качества</a>
+      <span>|</span>
+      <a href="#schedule">Расписание</a>
+      <span>|</span>
+      <a href="#video">Мое любимое видео</a>
+      <span>|</span>
+      <a href="#network">Соц. сети</a>
+      <span>|</span>
+      <a href="#forma">Форма обратной связи</a>
+    </nav>
+    </header>
+    <hr />
+    <main>
+      <figure>
+        <picture>
+          <source srcset="https://sun9-east.userapi.com/sun9-35/s/v1/ig2/YEs1Sji2_pWomrBEPe5jYN56rupkR4zAuet8n20R4z0iabQg9r7t8mRsfTCvmpt6sTweg8ptmQVDniWVw-Npqw7H.jpg?size=957x1276&quality=96&type=album" media="(max-width: 768px)">
+          <img src="https://sun2.userapi.com/sun2-21/s/v1/ig2/GA67WaU2xE9sg_dEsC-P992mdEb8pI0AZ8QZFSW1sFKP0MlMjjH4lMTLMlPssLRnf5fpK3sBwZzK2Y9HFYgwuNbn.jpg?size=853x1277&quality=96&type=album"  
+          width="300"
+          alt="Кристина Серкова, 25 лет">
+          <figcaption>Кристина Серкова, 25 лет</figcaption>
+        </picture>
+      </figure>
+      <h1>
+        Привет мир! Меня зовут Кристина Серкова
+      </h1>
+      <p>
+        Это мой первый сайт, но совсем скоро я стану крутым
+        <strong>React разработчиком!</strong>
+      </p>
+      <p>
+        Моя цель - через полгода стать членом классной команды в крупной
+        компании. Быть профессионалом в своем деле, решать интересные и сложные
+        задачи, разрабатывать крутые продукты, которые сделают этот мир лучше!
+      </p>
+      <aside>
+        P.S. Я очень люблю шоколад, поэтому пусть здесь будет эта гифка
+        <img src="https://i.gifer.com/embedded/download/Rve2.gif" width="200" height="200" alt="шоколад">
+      </aside>
+    </main>
+    <!--Секция 1-->
+      <section>
+        <h2 id="me">Немного обо мне</h2>
+        <p>
+          Мне 25 лет.
+          <br />
+          Родилась я в маленьком городе Кабардино-Балкарской республики -
+          Прохладный.
+          <br />
+          В школе я отдавала предпочтение химии, как предмету, поэтому, выбор
+          моей будующей профессии упал на фармацию.
+        </p>
+        <p>
+          После окончания института я начала работать в аптечной сфере и спустя
+          2 года поняла, что это не то дело, которому я хочу посвятить свою
+          жизнь. Таким образом, я пришла к идее сменить свою проф. деятельность
+          на React разработчика и уверена, что у меня это получится!
+        </p>
+        <h3 id="was">
+          Если бы я была:
+        </h3>
+        <ul>
+          <li>Фруктом: <i>Виноградом</i></li>
+          <li>Цветом: <i class="red">Красный</i></li>
+          <li>Временем года: <i>Весной</i></li>
+          <li>Песней: <i>Once upon a December - Anastasia</i></li>
+          <li>Городом: <i>Рим</i></li>
+          <li>Супер героем: <i>Халк</i></li>
+          <li>Брендом: <i>Hermès</i></li>
+        </ul>
+        <h3>Моя любимая цитата:</h3>
+        <blockquote>
+          "То, во что ты веришь, становится твоим миром."
+        </blockquote>
+        <p>
+          <i class="alignment">Ричард Матесон "Куда приводят мечты"</i>
+        </p>
+        <h3 id="characteristics">Мои сильные качества:</h3>
+        <ol>
+          <li>Отвественная</li>
+          <li>Коммуникабельная</li>
+          <li>Самостоятельная</li>
+          <li>Исполнительная</li>
+          <li>Пунктуальная</li>
+        </ol>
+      </section>
+      <!--Секция 2-->
+      <section>
+      <h2 id="schedule">Мои планы на ближайшую неделю</h2>
+      <table border="1" cellspacing="0">
+        <colgroup>
+          <col span="1" width="50">
+          <col width="100">
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Понедельник</th>
+            <th>Вторник</th>
+            <th>Среда</th>
+            <th>Четверг</th>
+            <th>Пятница</th>
+            <th>Суббота</th>
+            <th>Воскресенье</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10:00</td>
+            <td rowspan="11">Работа</td>
+            <td rowspan="11">Работа</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" rowspan="5"> Поездка в горы</td>
+          </tr>
+          <tr>
+            <td>11:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+            <tr>
+              <td>12:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>13:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>14:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>15:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>16:00</td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">Тренировка</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>17:00</td>
+              <td rowspan="2">Тренировка</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td rowspan="2">Колл</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>20:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>21:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>22:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </tbody>
+      </table>
+    </section>
+    <!--Секция 3-->
+      <section>
+      <h2 id="video">Мое любимое смешное видео</h2>
+      <iframe
+        src="https://vk.com/video_ext.php?oid=499403338&id=456239655&hash=347f7238a72fc699&hd=2"
+        width="560"
+        height="315"
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <video controls>
+        <source src="public/css/video.mp4" type="video/mp4" />
+        <p>
+          Если данное видео у вас не поддерживается. Вот
+          <a href="video/video.mp4">ссылка</a>
+        </p>
+      </video>
+    </section>
+    <!--Секция 4-->
+      <section>
+      <h2 id="network">Давайте знакомиться ближе</h2>
+      <ul>
+        <li>
+          <a href="www.instagram.com/kristinaridman/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://vk.com/id134598032" target="_blank">Вконтакте</a>
+        </li>
+        <li><a href="@kristinaridman" target="_blank">Telegram</a></li>
+        <li><a href="mailto:41097.tina@mail.ru" target="_blank">Почта</a></li>
+        <li><a href="tel:+79283265404" target="_blank">Телефон</a></li>
+      </ul>
+    </section>
+    <!--Секция 5-->
+    <section>
+      <h2 id="forma">Форма обратной связи</h2>
+      <form enctype="multipart/form-data" method="post">
+        <label for="firsName">Имя:</label> 
+          <input id="firsName" type="text" name="firsName" placeholder="Введите имя">
+          <label for="phone">Телефон:</label>
+          <input id="phone" type="tel" name="phone" placeholder="Введите номер телефона" required>
+          <label for="email">E-mail:</label>
+          <input id="email" type="email" name="email" placeholder="Введите ваш email" required>
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" placeholder="Введите текст" maxlength="100"></textarea>
+          <label for="namber">Ваш возраст:</label>
+          <input id="namber" type="number" name="count" min="18" max="50">
+          <label for="file">Ваш файл:</label>
+          <input type="file" id="fileField" name="photo" multiple accept="image/*">
+          <label for="send">
+          <input class="indent" id="send" type="submit" value="Отправить">
+        </label>
+      </form>
+    </section>
+    <hr />
+    <footer>
+      2023 г. Первый личный сайт
+    </footer>
+  </body>
+</html>

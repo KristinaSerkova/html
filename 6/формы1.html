@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search</title>
+  </head>
+  <body>
+    <h1>Форма обратной связи</h1>
+    <form method="post">
+        <label>
+            <span>Название организации:</span>
+        <br />
+            <input type="text" name="title" placeholder="Введите название">
+        </label>
+        <br />
+        <br />
+        <label>
+            <span>Контактное лицо*:</span>
+            <br />
+            <input type="text" name="firsName" placeholder="Введите ФИО" required>
+        </label>
+        <br />
+        <br />
+        <label>
+            <span>Телефон*</span>
+            <br />
+            <input type="tel" name="telephon" placeholder="Введите номер телефона" required>
+        </label>
+        <br />
+        <br />
+        <label>
+            <span>E-mail</span>
+            <br />
+            <input type="email" name="email" placeholder="Введите email">
+        </label>
+        <br />
+        <br />
+        <label>
+            <span>Текст запроса</span>
+            <br />
+            <input type="text" name="request" placeholder="Введите текст">
+        </label>
+        <br />
+        <br />
+        <input type="submit" value="Отправить">
+    </form>
+  </body>
+</html>

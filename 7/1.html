@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML: Урок 7 Задание 2</title>
+  </head>
+  <body>
+    <form method="post">
+      <label style="display: block; margin-bottom: 5px;" for="text"><i>*Тема письма</i></label>
+        <input id="text" type="text" name="text" placeholder="Укажите тему" required />
+      <label style="display: block; margin-bottom: 5px;" for="firsName"><i>Ваше имя</i></label>
+        <input id="firsName" type="text" name="name" placeholder="Как вас зовут?" />
+      <label style="display: block; margin-bottom: 5px;" for="email"><i>*Email</i></label>
+        <input id="email" type="email" name="email" placeholder="Ваш email" required />
+      <label style="display: block; margin-bottom: 5px;" for="text"><i>*Текст сообщения (до 250 символов)</i></label>
+        <textarea id="text"
+          name="message"
+          placeholder="Текст сообщения"
+          maxlength="250"
+          required
+        ></textarea>
+      <label style="display: block; margin-bottom: 5px;" for="send"></label>
+        <input id="send" type="submit" value="Отправить" />
+    </form>
+  </body>
+</html>
+

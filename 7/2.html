@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML: Урок 7 Задание 3</title>
+  </head>
+  <body>
+    <h2>Арендовать авто</h2>
+    <form method="post">
+      <label style="display: block; margin-bottom: 5px;" for="brand"><i>*Выберите авто</i></label>
+        <select name="brand">
+          <optgroup label="Ferrari"></optgroup>
+          <option value="ferrari" selected
+            >Ferrari Portofino - от 2000 до 2700 AED</option
+          >
+          <option value="ferrari">Ferrari Roma - от 2300 до 3850 AED</option>
+          <optgroup label="Lamborghini"></optgroup>
+          <option value="Lamborghini">Lamborghini Aventador</option>
+          <option value="Lamborghini">Lamborghini Centenario</option>
+        </select>
+      <label style="display: block; margin-bottom: 5px;" for="date"><i>*Дата аренды</i></label>
+        <input id="date" type="date" name="date" required />
+      <label style="display: block; margin-bottom: 5px;" for="firsName"><i>*Ваше имя</i></label>
+        <input id="firsName" type="text" name="name" required />
+      <label style="display: block; margin-bottom: 5px;" for="phone"><i>*Ваш номер телефона</i></label>
+        <input id="phone" type="tel" name="phone" placeholder="+971 9 999 9999" required />
+      <label style="display: block; margin-bottom: 5px;" for="city"><i>*Выберите город</i></label>
+        <input id="city" type="radio" name="city" value="Dubay" checked />
+        <span>Дубай</span>
+        <input id="city" type="radio" name="city" value="Abu-Dabi" />
+        <span>Абу-Даби</span>
+        <input id="city" type="radio" name="city" value="El" />
+        <span>Эль-Фуджайра</span>
+      <label style="display: block; margin-bottom: 10px; margin-top: 10px;" for="approval">
+        <input id="approval" type="checkbox" name="approval" value="approval" />Отправляя
+        заявку, я соглашаюсь на обработку персональных данных
+      </label>
+      <button type="submit">Оставить заявку</button>
+    </form>
+  </body>
+</html>

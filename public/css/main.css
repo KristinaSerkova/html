@@ -1,0 +1,21 @@
+aside {
+    float: right;
+    width:200px;
+    height:250px;
+    background-color: rgb(249, 231, 161);
+}
+i.alignment {
+    float: right;
+}
+i.red {
+    color: red;
+}
+footer {
+    text-align: center;
+}
+label {
+    display: block; margin-bottom: 5px;
+}
+input.indent {
+    margin-top: 5px;
+}

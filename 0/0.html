@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание</title>
+    </head>
+    <body>
+        <form enctype="multipart/form-data" method="post" action="http://193.41.78.252:27015/user">
+            <label style="display: block; margin: 5px;" for="firsName">Имя:</label>
+            <input id="firsName" type="text" name="name" required>
+            <label style="display: block; margin-bottom: 5px;" for="lastName">Фамилия:</label>
+            <input id="lastName" type="text" name="surname">
+            <lable style="display: block; margin-bottom: 5px;" for="email">E-mail:</lable>
+            <input id="email" type="email" name="email" required>
+            <label style="display: block; margin-bottom: 5px;" for="phone">Телефон:</label>
+            <input id="phone" type="tel" name="phone">
+            <label style="display: block; margin-bottom: 5px;" for="gender">Пол:</label>
+            <input id="gender" type="radio" value="male" name="gender">
+            <span>Мужской</span>
+            <input id="gender" type="radio" value="female" name="gender">
+            <span>Женский</span>
+            <label style="display: block; margin-bottom: 5px;" for="namber">Возраст:</label>
+            <input id="namber" type="number" name="age" min="18" max="50">
+            <label style="display: block; margin-bottom: 5px;" for="file">Фото:</label>
+            <input id="file" type="file" name="photo" multiple accept="image/png; image/jpg">
+            <label style="display: block; margin-bottom: 5px; margin-top: 5px;" for="send">
+                <input id="send" type="submit" value="Отправить">
+            </label>
+        </form>
+    </body>
+</html>
