@@ -1,0 +1,229 @@
+.content {
+    background-color: var(--main-background-color);
+    height: 100vh;
+}
+:root {
+    --color3: #332317;
+    --color1: #A77C5D;
+    --color2: #F4E8DE;
+    --main-background-color: #EDDACA;
+    --header-background-color: #A77C5D;
+}
+@media screen and (max-width:767px) {
+    .body {
+        font-family: "Roboto";
+        font-weight: 400;
+    } 
+} 
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    background-color: var(--header-background-color);
+}
+.header__left {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header__left-element {
+    cursor: pointer;
+}
+.header__left-text {
+    font-size: 24px;
+    line-height: 28,13px;
+}
+.header__right {
+    padding: 16px;
+    cursor: pointer;
+}
+.main {
+    margin-top: 24px;
+    gap: 16px;
+}
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/*======Polimorf=======*/
+.Polimorf {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color2);
+    border-radius: 15px;
+    border: 1px solid var(--color1);
+}
+.Polimorf .Polimorf__right-animation {
+    opacity: 0;
+}
+.Polimorf:hover .Polimorf__right-animation {
+    opacity: 1;
+    cursor: pointer;
+}
+.Polimorf__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+.cat-P {
+    left: 20px;
+    position: relative;
+    display: block;
+}
+.cat-P__body {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+}
+.cat-P__tail {
+    position: absolute;
+    left: 41px;
+    top: 24px;
+}
+.cat-P__eyes-left {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.cat-P__eyes-right {
+    position: absolute;
+    left: 36px;
+    top: 20px;
+}
+.cat-P__mouth {
+    position: absolute;
+    left: 26px;
+    top: 23px;
+}
+.Polimorf__left-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 28,13px;
+}
+._weight {
+    font-size: 16px;
+    line-height: 24px;
+}
+.Polimorf__left-arrow {
+    position: absolute;
+    left: 147px;
+    top: 52px;
+}
+.Polimorf__right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.Polimorf__right-animation {
+    margin: 12px;
+}
+.Polimorf__right-date {
+    font-size: 12px;
+    line-height: 14.06px;
+    margin: 12px;
+}
+/*======Pulheria=======*/
+.Pulheria {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color2);
+    border-radius: 15px;
+    border: 1px solid var(--color1);
+}
+.Pulheria .Pulheria__right-animation {
+    opacity: 0;
+}
+.Pulheria:hover .Pulheria__right-animation {
+    opacity: 1;
+    cursor: pointer;
+}
+.Pulheria__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+.Pulheria__left-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 28,13px;
+}
+.Pulheria__left-arrow {
+    position: absolute;
+    left: 147px;
+    top: 52px;
+}
+.Pulheria__right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.Pulheria__right-animation {
+    margin: 12px;
+}
+.Pulheria__right-date {
+    font-size: 12px;
+    line-height: 14.06px;
+    margin: 12px;
+}
+/*======Apofem=======*/
+.Apofem {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color2);
+    border-radius: 15px;
+    border: 1px solid var(--color1);
+}
+.Apofem .Apofem__right-animation {
+    opacity: 0;
+}
+.Apofem:hover .Apofem__right-animation {
+    opacity: 1;
+    cursor: pointer;
+}
+.Apofem__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+.Apofem__left-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 28,13px;
+}
+.Apofem__left-arrow {
+    position: absolute;
+    left: 147px;
+    top: 52px;
+}
+.Apofem__right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.Apofem__right-animation {
+    margin: 12px;
+}
+.Apofem__right-date {
+    font-size: 12px;
+    line-height: 14.06px;
+    margin: 12px;
+}
