@@ -1,7 +1,4 @@
-.content {
-    background-color: var(--main-background-color);
-    height: 100vh;
-}
+
 :root {
     --color3: #332317;
     --color1: #A77C5D;
@@ -9,22 +6,25 @@
     --main-background-color: #EDDACA;
     --header-background-color: #A77C5D;
 }
-@media screen and (max-width:767px) {
-    .body {
+body {
         font-family: "Roboto";
         font-weight: 400;
+        background-color: var(--color2);
+        height: 100vh;
     } 
-} 
 .container {
     max-width: 768px;
     margin: 0 auto;
 }
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 56px;
     background-color: var(--header-background-color);
+    box-shadow: 0 6px 5px 1px rgba(0, 0, 0, .2);
 }
 .header__left {
     padding: 12px;
@@ -44,8 +44,9 @@
     cursor: pointer;
 }
 .main {
-    margin-top: 24px;
+    margin-top: 12px;
     gap: 16px;
+    padding: 12px;
 }
 .main__content {
     display: flex;
@@ -60,6 +61,7 @@
     background-color: var(--color2);
     border-radius: 15px;
     border: 1px solid var(--color1);
+    box-shadow: 0 6px 5px 1px rgba(0, 0, 0, .2);
 }
 .Polimorf .Polimorf__right-animation {
     opacity: 0;
@@ -141,6 +143,7 @@
     background-color: var(--color2);
     border-radius: 15px;
     border: 1px solid var(--color1);
+    box-shadow: 0 6px 5px 1px rgba(0, 0, 0, .2);
 }
 .Pulheria .Pulheria__right-animation {
     opacity: 0;
@@ -188,6 +191,7 @@
     background-color: var(--color2);
     border-radius: 15px;
     border: 1px solid var(--color1);
+    box-shadow: 0 6px 5px 1px rgba(0, 0, 0, .2);
 }
 .Apofem .Apofem__right-animation {
     opacity: 0;
