@@ -1,0 +1,36 @@
+:root {
+    --color3: #332317;
+    --color1: #A77C5D;
+    --color2: #F4E8DE;
+    --main-background-color: #EDDACA;
+    --header-background-color: #A77C5D;
+}
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+    background-color: var(--color2);
+} 
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: var(--header-background-color);
+    box-shadow: 0 6px 5px 1px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+}
+.header__arrow {
+    padding: 12px;
+}
+.header__text {
+    font-weight: 400;
+}
+.main {
+}
+.form__name {
+    padding: 0px 16px;
+}
