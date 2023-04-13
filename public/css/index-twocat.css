@@ -60,7 +60,7 @@ dt {
 }
 dd {
     display: grid;
-    grid-template-columns: 80px 1px;
+    grid-template-columns: 60px 1px;
     align-items: center;
     font-size: 16px;
 }
