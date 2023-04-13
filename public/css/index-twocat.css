@@ -44,6 +44,7 @@ body {
 /*------main-------*/
 .main {
     margin-top: 29px;
+    padding-bottom: 463px;
 }
 dl {
     display: grid;
@@ -59,7 +60,7 @@ dt {
 }
 dd {
     display: grid;
-    grid-template-columns: 46px 1px;
+    grid-template-columns: 80px 1px;
     align-items: center;
     font-size: 16px;
 }
@@ -70,9 +71,14 @@ dd {
     right: 0;
     bottom: 0;
     background-color: var(--color2);
-    border-top: solid 1px var(--color1);
 }
-
+hr {
+    height: 1px;
+    margin: 0;
+    border: none;
+    color: var(--color1);
+    background-color: var(--color1);
+}
 .footer__content {
     display: flex;
     justify-content: space-evenly;
