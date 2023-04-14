@@ -13,32 +13,18 @@ body {
 .container {
     max-width: 768px;
     margin: 0 auto;
-    min-width: 320px;
 }
-.header {
-    display: flex;
-    align-items: center;
-    height: 56px;
-    background-color: var(--header-background-color);
-    box-shadow: 0 6px 5px 1px rgba(0, 0, 0, .2);
-    position: sticky;
-    top: 0;
-}
-.header__arrow {
-    padding: 12px;
-}
-.header__text {
-    font-weight: 400;
+.update {
     font-size: 24px;
-}
-.main {
-    margin-top: 24px;
+    font-weight: 400;
+    border-bottom: solid 1px var(--color1);
+    padding: 16px;
 }
 .form {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    margin: 12px;
+    margin: 24px 12px;
 }
 .form__style {
     font-size: 16px;
@@ -67,8 +53,21 @@ body {
 input::placeholder {
     color: var(--color3);
 }
-.form__style._icon {
-    background: url(/icon/Calendar.svg);
-    background-repeat: no-repeat;
-    background-position: right 15px top 50%;
+.button {
+    border-top: solid 1px var(--color1);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.button__style {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 36px;
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+    background-color: var(--color1);
+}
+.button__style._cancel {
+    background-color: var(--color2);
 }

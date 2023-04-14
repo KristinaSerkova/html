@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cats</title>
+    <link rel="stylesheet" href="/public/css/normalize.css" type="text/css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/public/css/index-fivecat.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="update">Update Weight</h1>
+      <form method="get" class="form">
+        <select class="form__select" name="weight">
+          <option value="weight" disabled selected>Weight</option>
+          <option>3,5 KG</option>
+          <option>4 KG</option>
+          <option>4,5 KG</option>
+        </select>
+        <input
+          class="form__style"
+          type="text"
+          name="date"
+          placeholder="Measuring Date"
+        />
+      </form>
+      <div class="button">
+        <button class="button__style" type="submit">Create</button>
+        <button class="button__style _cancel" type="submit">Cancel</button>
+      </div>
+    </main>
+  </body>
+</html>

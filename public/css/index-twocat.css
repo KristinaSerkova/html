@@ -44,7 +44,6 @@ body {
 /*------main-------*/
 .main {
     margin-top: 29px;
-    padding-bottom: 463px;
 }
 dl {
     display: grid;
@@ -60,7 +59,7 @@ dt {
 }
 dd {
     display: grid;
-    grid-template-columns: 60px 1px;
+    grid-template-columns: 46px 1px;
     align-items: center;
     font-size: 16px;
 }
@@ -71,13 +70,8 @@ dd {
     right: 0;
     bottom: 0;
     background-color: var(--color2);
-}
-hr {
-    height: 1px;
-    margin: 0;
-    border: none;
-    color: var(--color1);
-    background-color: var(--color1);
+    border-top: solid 1px var(--color1);
+    padding: 8px 0 0 0;
 }
 .footer__content {
     display: flex;
@@ -100,7 +94,7 @@ hr {
     font-size: 12px;
     margin: 13px 13px 0 0;
 }
-._history {
+.footer__content-right._history {
     margin: 0;
     color: var(--color4);
 }
