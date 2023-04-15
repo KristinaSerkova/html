@@ -64,6 +64,9 @@ body {
     background-repeat: no-repeat;
     background-position: right 16px top 50%;
 }
+.form__select._color {
+    background-color: var(--color2);
+}
 input::placeholder {
     color: var(--color3);
 }
